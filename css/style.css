@@ -1,0 +1,563 @@
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth !important;
+    scroll-padding: 8rem !important;
+}
+@font-face {
+    font-family: 'Babangone';
+    src: url('assits/fonts/babang-webfont.woff2') format('woff2'),
+         url('assits/fonts/babang-webfont.woff') format('woff');
+    
+}
+:root{
+    /* all color */
+    --color-one: #181a32;
+    --color-two: #42d3ff;
+    --color-three:white;
+    --nav-btn-color: #1e2143;
+    --nav-bg: rgb(24, 26, 50,0.9);
+    /* end colors */
+    
+    /* fonts */
+    --font-one: "Kanit", sans-serif;
+    --font-two: 'Babangone';
+   --font-three : "Source Sans 3", sans-serif;
+   --font-four: "Roboto", sans-serif;
+    /* fonts end */
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+}
+
+body {
+    background: var(--color-one);
+    height: 100vh;
+}
+ /* nav style */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--nav-bg);
+
+    height: 10rem;
+    padding: 3.5rem 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 800;
+}
+.logo p{
+    margin: auto;
+}
+.logo:hover{
+    color: #fff !important;
+}
+.navlist {
+    display: flex;
+}
+.navlist a {
+    display: inline-block;
+    margin: 0 3.5rem;
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 600;
+    transition: all .50s ease;
+}
+.navlist a:hover {
+    text-shadow: 0.3rem 0.3rem 2rem #066400, -0.2rem 0.1rem 3rem var(--color-two);
+}
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+.btn-menu {
+    display: inline-block;
+    padding: 1.4rem 3.5rem;
+    background: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #000;
+    border-radius: 1rem;
+    margin-right: 1.2rem;
+    transition: all .6s ease;
+}
+.btn-menu:hover {
+    background-color: var(--nav-btn-color);
+    color: #fff;
+    box-shadow: 0 0 2rem var(--nav-btn-color);
+    transform: scale(1.1);
+    border: 0.1rem solid rgba(128, 128, 128, 0.5);
+}
+#menu-icon {
+    font-size: 3rem;
+    color: #fff;
+    z-index: 1000;
+    cursor: pointer;
+    padding: 0 0 0 1rem !important;
+    display: none;
+}
+
+/* nav end */
+
+/* hero section */
+
+/* ..................... */
+@media (max-width: 1300px) {
+    header {
+        padding: 2rem 6%;
+    }
+    /* main-hero-container */
+    .main-hero-container{
+        padding: 2rem 6% !important;
+    }
+     /* main-hero-container */
+    
+    /* ABOUT container */
+.about-us{
+    padding: 2rem 6%;
+  
+    
+
+}
+}
+@media (max-width: 1050px) {
+    .logo {
+        font-size: 2.5rem;
+    }
+    .navlist a {
+        margin: 0 2.5rem;
+    }
+    .btn-menu {
+        padding: 1.1rem 2.3rem;
+    }
+}
+@media (max-width: 940px) {
+    
+    #menu-icon {
+        display: block !important;
+    }
+    .navlist {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        backdrop-filter: blur(3rem);
+        display: flex;
+        flex-direction: column;
+        padding-top: 18rem;
+        align-items: center;
+        transition: all .7s ease;
+    }
+    .navlist a {
+        display: block;
+        padding: 0;
+        margin: 0 0 5rem 0;
+        font-size: 2.5rem;
+    }
+    .navlist.open {
+        right: 0;
+    }
+}
+
+/* navbar media end */
+/* ..................... */
+
+  /* //hero section design// */
+  
+.main-hero-container{
+    width: 100%;
+    height: auto;
+    padding: 3.5rem 6%;
+   
+
+
+ 
+  
+
+}
+ 
+.text-main {
+line-height: 0.8;
+margin-top: 10rem;
+
+word-wrap: break-word; 
+word-break: break-word;    
+
+
+
+
+}
+.text-one span {
+color: white;
+
+font-size: clamp(2.5rem , 3vw , 4rem);
+ color:var(--color-two);
+font-family: var(--font-two);
+
+
+
+
+
+}
+.text-two span{
+color: white;
+ font-size: clamp(6.7rem , 8vw , 15rem);
+font-family: var(--font-one);
+font-weight: bold;
+}
+
+.text-three span{
+color: white;
+font-size: clamp(7rem , 8vw , 15rem);
+font-weight: bold;
+font-family: var(--font-one);
+
+}
+.text-three{
+margin-bottom: 1rem;
+}
+.text-four span {
+color: white;
+font-size: clamp(2.5rem , 3vw , 4rem);
+ color: var(--color-two);
+ font-family: var(--font-two);
+
+
+
+
+
+}
+
+.main-img-hero{
+
+    margin-top: 7rem;
+    
+    
+    display: flex;
+    
+    align-items: center;
+      
+    justify-content: center;
+    
+    }
+   .img-hero{
+    width: 100%;
+ 
+    }
+    
+    /* main gap container */
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+     
+ 
+ .hero-box-para p{
+    color: #fff;
+    font-size:clamp( 1.4rem , 1.2vw , 7rem);
+    font-family: var(--font-three);
+    
+ }
+ .hero-box-para span{
+    color: var(--color-two);
+    font-weight: 700;
+   
+ }
+
+ /* social media */
+ .social-hero{
+   
+    display: flex;
+    
+    gap: 1rem;
+ }
+ .social-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: clamp(4rem , 2.7vw , 10rem);
+    height: clamp(4rem , 2.7vw , 10rem);
+    border-radius: 50%;
+    border: 2px solid var(--color-two);
+    box-shadow: 0px 0px 25px #42d3ff16;
+    font-size: clamp(1.5rem , 1vw ,10rem);
+    background-color: transparent;
+    color: var(--color-two);
+    transition: .3s ease;
+   
+ }
+ .social-btn:hover{
+     
+    transition: .3s ease;
+    background-color: #42d3ff;
+    color: black;
+    box-shadow: 0px 0px 25px #42d3ff6a;
+ }
+ 
+ /* buttons hire and services */
+ 
+ .button-hero{
+    margin-top: 1.5rem;
+     display: flex;
+     
+     flex-direction: row;
+     gap:1.2rem;
+   
+ }
+ .button-hero-hire, .button-hero-services{
+    width: clamp(15rem , 10vw , 17rem);
+    height: 5.2rem;
+ background-color: transparent;
+ box-shadow: 0px 0px 25px #42d3ff16;
+ color: var(--color-two);
+ border: 2px solid var(--color-two);
+ font-size: 1.5rem;
+ border-radius: 1rem;
+ font-family: var(--font-one);
+ transition: .3s ease;
+
+ }
+ .button-hero-hire{
+    transition: .3s ease;
+    background-color:  var(--color-two);
+    color: black;
+ }
+ .button-hero-services:hover{
+    background-color:  var(--color-two);
+    transition: .3s ease;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px #42d3ff45;
+    color: black;
+   
+ }
+ .button-hero-hire:hover{
+    transition: .3s ease;
+    box-shadow: 0px 0px 25px #42d3ff45;
+    color: var(--color-two);
+    border: 2px solid var(--color-two);
+    background-color: transparent;
+    transform: scale(1.05);
+ }
+
+ 
+  /* //hero section end// */
+
+ 
+
+
+ 
+
+/* ABOUT SECTION */
+.about-us{
+    padding: 3.5rem 6%;
+   background-color: var(--color-one);
+   
+    height: 100vh;
+    
+
+}
+.about-heading h1{
+    margin-bottom: 3rem;
+    scroll-padding-bottom: 5rem; /* Adds padding at the top while snapping */
+    color:  var(--color-two);
+   text-align: center;
+ 
+    font-family: var(--font-one);
+    font-size:  clamp(5rem , 3.5vw , 6rem);
+    font-weight: 700;
+ 
+    
+   
+   
+
+}
+.about-main-row {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    align-items: stretch; /* Ensure all items stretch to equal height */
+}
+.box-about{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+ 
+    
+   
+ 
+}
+.box-about-heading h1{
+font-size:  clamp(3rem , 2.5vw , 6rem);
+ text-align: center;
+color: var(--color-three);
+padding-left: 0.3rem;
+font-family: var(--font-two);
+font-weight: 500;
+}
+.box-about-contant-main {
+    border: 2px solid rgb(91, 91, 91); 
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-left: 6px solid var(--color-two);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.301);
+    border-radius: 0.4rem;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure content is spaced evenly */
+    height: 100%; /* Stretch to match height of other boxes */
+    transition: .3s ease;
+}
+.box-about-contant-main:hover {
+    transition: .3s ease;
+    box-shadow: 0px 0px 25px #42d3ff73;
+    border: 2px solid #42d3ff; 
+    border-left: 6px solid var(--color-two);
+}
+.box-contant-about h3{
+    color: var(--color-two);
+    font-size: clamp(1.4rem , 1.1vw , 1.8rem);
+    font-family: var(--font-one);
+    font-weight: 500;
+}
+
+.box-contant-about h2{
+ font-family: var(--font-one);
+ color: var(--color-two);
+ font-weight: 500;
+    font-size:  clamp(2.6rem , 2.2vw , 3.5rem);
+}
+
+.box-contant-about p{
+   
+    font-size:  clamp(1.3rem , 1vw , 1.7rem);
+    font-family: var(--font-four);
+  
+   
+}
+.box-contant-about span{
+    color: white;
+}
+/* ////////////////////////////////////////// */
+
+/* -----------------media queary----------------------- */
+
+/* ////////////////////////////////////////// */
+
+/* //Media for mobile// */
+@media (min-width:0px) and (max-width:700px){
+    .main-hero-container{
+    padding: 2rem 4%;
+    }
+    .text-two span{
+    font-size: clamp(5rem , 18vw , 20rem);
+       transition: all .7s ease;
+    
+    
+    }
+    
+    .text-three span{
+    font-size: clamp(5rem , 19vw , 20rem);
+       transition: all .7s ease;
+    }
+    .text-one span{
+    font-size: clamp(2rem , 7vw , 7rem);
+    transition: all .7s ease;
+    }
+    .text-four span{
+    font-size: clamp(2rem , 7vw , 10rem);
+    transition: all .7s ease;
+    }
+    .text-main {
+    
+    margin-top: 0px !important;
+    }
+    .main-hero-container{
+       
+    
+    
+    
+       margin-top: 9rem !important;
+       
+    
+    }
+    .main-img-hero{
+    margin-top: 3rem;
+    }
+    .img{
+    width: 100% !important;
+}
+ /* hire and services buttons */
+ .button-hero{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+ }
+ .button-hero-hire, .button-hero-services{
+    width: 50%;
+ }
+    
+    }
+    
+      /* //Media for tablate// */
+    @media (min-width:700px) and (max-width:990px){
+    .text-two span{
+    font-size: clamp(6rem , 17vw , 20rem);
+       transition: all .7s ease;
+    
+    
+    }
+    .text-three span{
+    font-size: clamp(6rem , 17vw , 20rem);
+       transition: all .7s ease;
+    }
+    .text-one span{
+    font-size: clamp(2.5rem , 6vw , 7rem);
+    transition: all .7s ease;
+    }
+    .text-four span{
+    font-size: clamp(2.5rem , 6vw , 10rem);
+    transition: all .7s ease;
+    }
+    .text-main {
+    
+    margin-top: 0px !important;
+    }
+    
+    .main-hero-container{
+       
+    
+    
+    
+       margin-top: 9rem !important;
+       
+    
+    }
+    .main-img-hero{
+    margin-top: 3rem;
+    }
+    
+    }
+    
+    /* ///////////////////// */
+    

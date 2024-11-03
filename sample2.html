@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevAbd | Home</title>
+    <link rel="icon" type="image/png"  href="Logo-DevAbd.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+     <!-- font-one -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap" rel="stylesheet">
+        <!-- font-one-end -->
+         <!-- font-three -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Nanum+Gothic&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+            <!-- font-three -->
+    <link rel="preload" as="image" href="hjhj.png" fetchpriority="high">
+
+ <link  href="'https://yourwebsite.com/fonts/Babang.woff2'">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+ 
+
+    html {
+        font-size: 62.5%; /* 1rem = 10px */
+    }
+    :root{
+        /* all color */
+        --color-one: #181a32;
+        --color-two: #42d3ff;
+        --color-three:white;
+        --nav-btn-color: #1e2143;
+        --nav-bg: rgb(24, 26, 50,0.9);
+        /* end colors */
+        
+        /* fonts */
+        --font-one: "Kanit", sans-serif;
+       --font-two: 'Babang', sans-serif;
+       --font-three : "Source Sans 3", sans-serif;
+        /* fonts end */
+    }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-decoration: none !important;
+        list-style: none;
+    }
+    
+    body {
+        background: var(--color-one);
+        height: 100vh;
+    }
+     /* nav style */
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1000;
+        background-color: var(--nav-bg);
+    
+        height: 10rem;
+        padding: 3.5rem 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all .50s ease;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        color: #fff;
+        font-weight: 800;
+    }
+    .logo p{
+        margin: auto;
+    }
+    .logo:hover{
+        color: #fff !important;
+    }
+    .navlist {
+        display: flex;
+    }
+    .navlist a {
+        display: inline-block;
+        margin: 0 3.5rem;
+        color: #fff;
+        font-size: 1.7rem;
+        font-weight: 600;
+        transition: all .50s ease;
+    }
+    .navlist a:hover {
+        text-shadow: 0.3rem 0.3rem 2rem #066400, -0.2rem 0.1rem 3rem var(--color-two);
+    }
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+    .btn-menu {
+        display: inline-block;
+        padding: 1.4rem 3.5rem;
+        background: #fff;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #000;
+        border-radius: 1rem;
+        margin-right: 1.2rem;
+        transition: all .6s ease;
+    }
+    .btn-menu:hover {
+        background-color: var(--nav-btn-color);
+        color: #fff;
+        box-shadow: 0 0 2rem var(--nav-btn-color);
+        transform: scale(1.1);
+        border: 0.1rem solid rgba(128, 128, 128, 0.5);
+    }
+    #menu-icon {
+        font-size: 3rem;
+        color: #fff;
+        z-index: 1000;
+        cursor: pointer;
+        padding: 0 0 0 1rem !important;
+        display: none;
+    }
+   
+   /* nav end */
+   
+   /* hero section */
+  
+    /* ..................... */
+    @media (max-width: 1300px) {
+        header {
+            padding: 2rem 4%;
+        }
+        /* main-hero-container */
+        .main-hero-container{
+            padding: 2rem 4% !important;
+        }
+         /* main-hero-container */
+
+           /* main-rwo-about */
+  .main-row{
+            padding: 2rem 4% !important;
+        }
+         /* main-rwo-about */
+        
+        .main-container{
+            padding: 3rem 6%;
+        }
+    }
+    @media (max-width: 1050px) {
+        .logo {
+            font-size: 2.5rem;
+        }
+        .navlist a {
+            margin: 0 2.5rem;
+        }
+        .btn-menu {
+            
+            padding: 1.1rem 2.3rem;
+        }
+    }
+    @media (max-width: 940px) {
+        
+        #menu-icon {
+            display: block !important;
+        }
+        .navlist {
+            position: absolute;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100vh;
+            backdrop-filter: blur(3rem);
+            display: flex;
+            flex-direction: column;
+            padding-top: 18rem;
+            align-items: center;
+            transition: all .7s ease;
+        }
+        .navlist a {
+            display: block;
+            padding: 0;
+            margin: 0 0 5rem 0;
+            font-size: 2.5rem;
+        }
+        .navlist.open {
+            right: 0;
+        }
+    }
+
+    /* navbar media end */
+    /* ..................... */
+
+      /* //hero section design// */
+      
+    .main-hero-container{
+        width: 100%;
+        height: auto;
+        padding: 3.5rem 8%;
+ 
+ 
+     
+      
+
+    }
+ .text-main {
+   line-height: 0.8;
+   margin-top: 10rem;
+   
+   word-wrap: break-word; 
+   word-break: break-word;    
+ 
+ 
+ 
+   
+ }
+ .text-one span {
+    color: white;
+ 
+    font-size: clamp(2.5rem , 3vw , 4rem);
+     color:var(--color-two);
+    font-family: var(--font-two);
+ 
+ 
+ 
+ 
+    
+ }
+ .text-two span{
+    color: white;
+     font-size: clamp(6.7rem , 8vw , 15rem);
+    font-family: var(--font-one);
+    font-weight: bold;
+ }
+  
+ .text-three span{
+    color: white;
+    font-size: clamp(7rem , 8vw , 15rem);
+    font-weight: bold;
+    font-family: var(--font-one);
+ 
+ }
+ .text-three{
+    margin-bottom: 1rem;
+ }
+ .text-four span {
+    color: white;
+    font-size: clamp(2.5rem , 3vw , 4rem);
+     color: var(--color-two);
+     font-family: var(--font-two);
+ 
+ 
+ 
+ 
+    
+ }
+
+  
+ 
+      /* //hero section end// */
+  
+  /* //Media for mobile// */
+ @media (min-width:0px) and (max-width:700px){
+    .main-hero-container{
+    padding: 2rem 4%;
+ }
+ .text-two span{
+    font-size: clamp(5rem , 17vw , 20rem);
+       transition: all .7s ease;
+    
+
+ }
+  
+ .text-three span{
+    font-size: clamp(5rem , 17vw , 20rem);
+       transition: all .7s ease;
+ }
+ .text-one span{
+    font-size: clamp(2rem , 6vw , 7rem);
+    transition: all .7s ease;
+ }
+ .text-four span{
+    font-size: clamp(2rem , 6vw , 10rem);
+    transition: all .7s ease;
+ }
+ .text-main {
+ 
+   margin-top: 0px !important;
+}
+.main-hero-container{
+       
+ 
+ 
+ 
+       margin-top: 9rem !important;
+       
+
+   }
+   .main-img-hero{
+    margin-top: 3rem;
+   }
+   .img{
+    width: 100% !important;}
+
+  
+ }
+
+      /* //Media for tablate// */
+ @media (min-width:700px) and (max-width:990px){
+ .text-two span{
+    font-size: clamp(6rem , 17vw , 20rem);
+       transition: all .7s ease;
+    
+
+ }
+ .text-three span{
+    font-size: clamp(6rem , 17vw , 20rem);
+       transition: all .7s ease;
+ }
+ .text-one span{
+    font-size: clamp(2.5rem , 6vw , 7rem);
+    transition: all .7s ease;
+ }
+ .text-four span{
+    font-size: clamp(2.5rem , 6vw , 10rem);
+    transition: all .7s ease;
+ }
+ .text-main {
+ 
+ margin-top: 0px !important;
+}
+
+.main-hero-container{
+       
+ 
+ 
+ 
+       margin-top: 9rem !important;
+       
+
+   }
+   .main-img-hero{
+    margin-top: 3rem;
+   }
+ 
+ }
+ /* ///////////////////// */
+ 
+  
+ 
+ .main-img-hero{
+ 
+    margin-top: 7rem;
+ 
+   
+    display: flex;
+  
+    align-items: center;
+      
+    justify-content: center;
+    
+ }
+ .img{
+    width: 100%;
+ 
+     
+ 
+    z-index: 2;
+   
+     
+ }
+   /* .box{
+    position: absolute;
+    
+    width: clamp(30rem , 30vw , 60rem);
+    height: clamp(30rem , 30vw , 60rem);
+   
+    
+    border-radius: 50%;
+    overflow: hidden;
+    
+ }
+ 
+ .box::before{
+    content: '';
+    position: absolute;
+    animation: rotate 4s linear infinite;
+    inset: -2rem 6rem;
+    background: linear-gradient(315deg , var(--color-two) ,var(--color-two));
+ }
+ @keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+ }
+ .box::after{
+    content: '';
+    position: absolute;
+    inset: 0.5rem;
+    background: var(--color-one);
+    border-radius: 50%;
+    z-index: 1;
+ }  */
+
+ 
+   .social-hero{
+    display: flex;
+    margin-top: 2.5rem;
+    gap: 1rem;
+   }
+   .social-btn{
+    width: 4rem;
+    font-size: 1.5rem;
+    border: 2px solid var(--color-two);
+    background-color: transparent;
+    color: var(--color-two);
+    transition: all .6s ease;
+    height: 4rem;
+    
+ 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+  .social-btn:hover {
+    background-color: var(--color-two);
+    color: black;
+    transition: all .6s ease;
+    transform: translateY(-0.5rem) scale(1.1); /* Move up and zoom */
+}
+.button-hero{
+    margin-top: 2.5rem;
+   
+
+}
+.button-hero button{
+    width: 15rem;
+    height:5rem;
+    font-size: 1.5rem;
+    font-family: var(--font-one);
+    border: 2px solid var(--color-two);
+    background-color: transparent;
+ 
+    transition: all .6s ease;
+    color: var(--color-two);
+}
+.button-hero button:hover {
+    background-color: var(--color-two);
+    color: black;
+    transition: all .6s ease;
+    transform: translateY(-0.5rem) scale(1.1); /* Move up and zoom */
+}
+/* .input{
+    background-color: white;
+    margin-top: 3rem;
+   height: 5.8rem;
+   border-radius: 0.5rem;
+   width: 65%;
+    display: flex;
+    padding: 0.6rem;
+ 
+}
+.input input{
+ width: 70%;
+ border: none;
+ padding-left: 2%;
+ outline: none;
+ font-size: 1.8rem;
+ background-color: transparent;
+    
+}
+.input button{
+    width: 30%;
+    background-color: var(--color-one);
+    color: white;
+    border-top-right-radius:0.5rem ;
+    border-bottom-right-radius:0.5rem ;
+   
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.input input::placeholder{
+    font-family: var(--font-three);
+ color: rgb(61, 60, 60);
+    font-size: 1.7rem;
+   
+} */
+ 
+.main-row{
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+ gap: 2rem;
+ padding: 3.5rem 8%;
+   
+   
+}
+.about-heading{
+    font-size: 5rem;
+    font-family: var(--font-two);
+    text-align: center;
+}
+ .about-us{
+    color: white;
+ 
+   
+ }
+ .about-contant{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 2rem;
+  margin: 0 2rem;
+  background-color: rgba(22, 29, 105, 0.15);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgb(199, 198, 198);
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  transition: 0.4s ease;
+  cursor: pointer;
+
+ }
+ .about-contant:hover{
+    box-shadow: 0 0 25px var(--color-two);
+    border: 2px solid var(--color-two);
+ }
+ .main-contant-about-cont{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 2rem;
+    border-left: 5px solid var(--color-two);
+    position: relative;
+  }
+  .about-contant::before{
+    content: ' ';
+    width: 25px;
+    height: 25px;
+    background-color: var(--color-two);
+    position: absolute;
+    border-radius: 50%;
+    left: -37px;
+    top: 50px;
+  }
+</style>
+<body id="color-change">
+    <!-- hero-section -->
+     <!-- /////////////////// -->
+    <!-- main navbar -->
+     
+    <header>
+        <a href="" class="logo"><p>DevAbd<span style="color: var(--color-two);">.</span></p></a>
+        <ul class="navlist">
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="" class="btn-menu">Price</a>
+            <div class="fa-solid fa-bars" id="menu-icon"></div>
+        </div>
+    </header>
+    <!-- navbar end -->
+ 
+    <!-- container start -->
+    <div class="container-fluid main-hero-container ">
+        <div class="row">
+             <div class="col-lg-6 col-sm-12 col-md-12 main-col-left">
+                <div class="hero-container"  >
+                    <div class="text-main">
+                    
+                        <div class="text-one"> <span>Power Up Your</span></div>
+                        <div class="text-two"><span>BUSINESS</span></div>
+                        <div class="text-three"><span>ONLINE</span></div>
+                        <div class="text-four"><span>With Professional Websites</span></div>
+                       
+
+                         
+                     </div>
+                   
+                  <!-- Social Media Div -->
+             
+                <div class="social-hero">
+                    <button  class="social-btn"><i class="fab fa-facebook-f  "></i></button>
+                    <button class="social-btn"> <i class="fab fa-instagram "></i> </button>
+                    <button class="social-btn">     <i class="fab fa-whatsapp"></i></button>
+                    <button class="social-btn">   <i class="fab fa-linkedin-in"></i></button>
+                </div>
+                     <!-- Social Media Div End -->
+               
+<!-- buttons div -->
+  
+<div class="button-hero">
+    <button>Hire me</button>
+</div>
+ 
+ <!-- buttons div End -->
+ 
+ <!-- input hero sectiom -->
+
+ <!-- <div class="input">
+ <input type="text" placeholder="What's your work email?"><button>subscribe</button>
+ </div> -->
+
+
+
+ <!-- input hero sectiom -->
+
+
+ 
+
+                     
+                   
+                     
+                    
+                   
+                     
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-md-12 main-img-hero">
+                <div class="img  ">
+                    <img src="hjhj.png" alt="Description of the image" class="img-fluid">
+
+                </div>
+                <!-- <div class="box">
+                    
+                </div> -->
+                
+                 
+                
+                
+                
+                
+            </div>
+            
+        </div>
+   </div>
+    <!-- container end -->
+      <!-- hero-section-end -->
+     <!-- /////////////////// -->
+
+     <!-- ABOUT US SECTION -->
+       <div class="container-fluid   about-us" style="width: 100%; height: 100vh; background-color: #181a32;">
+        <div class="row  ">
+            <div class="main-row" > 
+            <div class="main-box-about-us">
+                <div class="about-heading">
+Why Chosse us
+                </div>
+                <div class="main-contant-about-cont"> 
+                <div class="about-contant">
+                    <h3>23-2-2023</h3>
+ <h2>Qulity work </h2>
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quasi exercitationem suscipit ex in laboriosam neque voluptas deleniti nesciunt similique!</p>
+                </div>
+                <div class="about-contant">
+                    <h3>23-2-2023</h3>
+ <h2>Qulity work </h2>
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quasi exercitationem suscipit ex in laboriosam neque voluptas deleniti nesciunt similique!</p>
+                </div>
+
+                <div class="about-contant">
+                    <h3>23-2-2023</h3>
+ <h2>Qulity work </h2>
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quasi exercitationem suscipit ex in laboriosam neque voluptas deleniti nesciunt similique!</p>
+                </div>
+            </div>
+
+            </div>
+            <!-- ///// -->
+            <div class="main-box-about-us">
+                <div class="about-heading">
+who I'am
+                </div>
+
+                 <div class="main-contant-about-cont"> 
+                <div class="about-contant">
+                    <h3>23-2-2023</h3>
+ <h2>Qulity work </h2>
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quasi exercitationem suscipit ex in laboriosam neque voluptas deleniti nesciunt similique!</p>
+                </div>
+                <div class="about-contant">
+                    <h3>23-2-2023</h3>
+ <h2>Qulity work </h2>
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quasi exercitationem suscipit ex in laboriosam neque voluptas deleniti nesciunt similique!</p>
+                </div>
+
+                <div class="about-contant">
+                    <h3>23-2-2023</h3>
+ <h2>Qulity work </h2>
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quasi exercitationem suscipit ex in laboriosam neque voluptas deleniti nesciunt similique!</p>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+        </div>
+ 
+       </div>
+
+         <!-- ABOUT US SECTION -->
+
+    <!-- menu open close code -->
+    <script type="text/javascript">
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+        let navLinks = document.querySelectorAll('.navlist a');
+    
+        // Function to toggle the menu
+        menu.onclick = () => {
+            menu.classList.toggle('fa-xmark');
+            navlist.classList.toggle('open');
+        };
+    
+        // Function to close the menu when a link is clicked
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('fa-xmark');
+                navlist.classList.remove('open');
+            });
+        });
+    </script>
+    
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script>
+            jQuery(document).ready(function($){
+                $('.slider-img').on('click' , function(){
+                    $('.slider-img').removeClass('active');
+                    $(this).addClass('active')
+                })
+            })
+        </script>
+
+    <!-- auto write -->
+    <!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <script>
+       var typed = new Typed(".auto-type", {
+    strings: [ "Web Developer","Programmer", "Web Designer"],
+    typeSpeed: 100,          // Speed of typing
+    backSpeed: 50,          // Speed of backspacing
+    loop: true               // Enable continuous looping
+});
+
+     </script> -->
+     <!-- auto write end -->
+      
+</body>
+</html>
